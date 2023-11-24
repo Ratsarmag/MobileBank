@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Intent profile = new Intent(this, ProfileActivity.class);
         startActivity(profile);
     }
+    public void remittanceClick(View view){
+        Intent remittance = new Intent(this, RemittanceActivity.class);
+        startActivity(remittance);
+    }
 }

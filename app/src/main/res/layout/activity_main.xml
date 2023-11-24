@@ -78,6 +78,7 @@
         android:layout_height="wrap_content"
         android:text="Перевод"
         android:textSize="40sp"
+        android:onClick="remittanceClick"
         android:background="@drawable/button_bg"
         android:layout_marginLeft="10dp"
         app:backgroundTint="@null"
