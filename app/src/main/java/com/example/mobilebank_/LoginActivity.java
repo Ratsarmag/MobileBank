@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
         pinView = findViewById(R.id.PINfield);
         pinView.setPasswordHidden(false);
         pinView.requestFocus();
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent menu = new Intent(this, MainActivity.class);
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
         pinView.addTextChangedListener(new TextWatcher() {
@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if(s.toString().length() == 4) {
-                    startActivity(intent);
+                    startActivity(menu);
                 }
             }
 

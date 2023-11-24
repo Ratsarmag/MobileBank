@@ -7,4 +7,112 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="profileClick"
+        android:background="@null"
+        android:src="@drawable/profile"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="exitClick"
+        android:background="@null"
+        android:src="@drawable/exit"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/profile" />
+    <ImageView
+        android:id="@+id/vksit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vksit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/card"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/vksit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/cardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дебетовая карта СГБ"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/card"
+        app:layout_constraintTop_toTopOf="@id/card"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Баланс: 1032,17 руб."
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/cardText"/>
+    <Button
+        android:id="@+id/remittance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перевод"
+        android:textSize="40sp"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="10dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оплатить"
+        android:textSize="40sp"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remittance"
+        />
+
+    <Button
+        android:id="@+id/office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Офис"
+        android:textSize="40sp"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pay"
+        />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
