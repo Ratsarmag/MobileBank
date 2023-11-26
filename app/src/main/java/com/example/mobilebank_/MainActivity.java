@@ -26,4 +26,8 @@ public class MainActivity extends AppCompatActivity {
         Intent remittance = new Intent(this, RemittanceActivity.class);
         startActivity(remittance);
     }
+    public void payClick(View view){
+        Intent pay = new Intent(this, PayActivity.class);
+        startActivity(pay);
+    }
 }

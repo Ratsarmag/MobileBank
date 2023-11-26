@@ -31,10 +31,10 @@
         app:layout_constraintRight_toLeftOf="@id/profile" />
 
     <Button
-        android:id="@+id/client"
+        android:id="@+id/mobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Клиенту банка"
+        android:text="Мобильная связь"
         android:textSize="32sp"
         android:background="@drawable/button_bg2"
         android:shadowColor="@color/text_shadow"
@@ -48,10 +48,10 @@
         app:layout_constraintTop_toBottomOf="@id/profile"
         />
     <Button
-        android:id="@+id/country"
+        android:id="@+id/gov"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="В другую страну"
+        android:text="Государство"
         android:textSize="32sp"
         android:background="@drawable/button_bg2"
         android:shadowColor="@color/text_shadow"
@@ -62,14 +62,14 @@
         android:layout_marginTop="50dp"
         app:backgroundTint="@null"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/client"
+        app:layout_constraintTop_toBottomOf="@id/mobile"
         />
 
     <Button
-        android:id="@+id/sbp"
+        android:id="@+id/vehicle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Перевод по СБП"
+        android:text="Транспорт"
         android:textSize="32sp"
         android:background="@drawable/button_bg2"
         android:shadowColor="@color/text_shadow"
@@ -80,7 +80,7 @@
         android:layout_marginTop="50dp"
         app:backgroundTint="@null"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/country"
+        app:layout_constraintTop_toBottomOf="@id/gov"
         />
 
     <Button
