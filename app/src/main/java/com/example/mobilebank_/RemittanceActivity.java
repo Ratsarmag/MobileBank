@@ -17,4 +17,12 @@ public class RemittanceActivity extends AppCompatActivity {
         Intent menu = new Intent(this, MainActivity.class);
         startActivity(menu);
     }
+    public void exitClick(View view){
+        this.finishAffinity();
+    }
+
+    public void profileClick(View view){
+        Intent profile = new Intent(this, ProfileActivity.class);
+        startActivity(profile);
+    }
 }
