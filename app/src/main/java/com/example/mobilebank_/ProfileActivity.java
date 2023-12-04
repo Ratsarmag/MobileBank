@@ -10,6 +10,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
+    // TODO - добавить возможность смены аватара(хз), в принципе что-то добавить и подредачить дизайн
     private TextView mTextView;
     private int limited;
     private SharedPreferences limit;
