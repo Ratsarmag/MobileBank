@@ -25,16 +25,16 @@ public class ProfileActivity extends AppCompatActivity implements SeekBar.OnSeek
         mTextView.setText("0");
 
         limit = getSharedPreferences("Limit", MODE_PRIVATE);
-        limited = limit.getInt("save_limit", limited);
+        limited = limit.getInt("limit", limited);
 
         mTextView.setText(String.valueOf(limited));
         seekBar.setProgress(limited);
+
+
     }
     public void menuClick(View view){
         Intent menu = new Intent(this, MainActivity.class);
-        menu.putExtra("limit", limited);
         startActivity(menu);
-
     }
 
     public void exitClick(View view){

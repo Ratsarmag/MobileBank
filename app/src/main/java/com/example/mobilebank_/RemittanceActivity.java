@@ -25,4 +25,9 @@ public class RemittanceActivity extends AppCompatActivity {
         Intent profile = new Intent(this, ProfileActivity.class);
         startActivity(profile);
     }
+
+    public void Rem2(View view){
+        Intent remmitance2 = new Intent(this, RemittanceActivity2.class);
+        startActivity(remmitance2);
+    }
 }

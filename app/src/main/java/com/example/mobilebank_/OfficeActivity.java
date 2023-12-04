@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class OfficeActivity extends AppCompatActivity {
-
+    // TODO - добавить карту, адрес, все что угодно, что душа пожелает, просто чтобы смотрелось норм
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

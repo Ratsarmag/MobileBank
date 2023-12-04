@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class PayActivity extends AppCompatActivity {
-
+    //TODO - в этом активити и двух последующих можно поменять вид кнопок, если что-то придумаем. Или оставить так
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

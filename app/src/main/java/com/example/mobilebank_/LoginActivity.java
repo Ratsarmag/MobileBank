@@ -15,7 +15,7 @@ import com.chaos.view.PinView;
 
 public class LoginActivity extends AppCompatActivity {
     PinView pinView;
-
+    // TODO - сделать проверку какую-либо простецкую проверку пина, даже если это сравнение со строкой
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
